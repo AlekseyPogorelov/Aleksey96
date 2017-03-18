@@ -1,0 +1,131 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, Menus, jpeg;
+
+type
+  TForm1 = class(TForm)
+    Image1: TImage;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
+    N6: TMenuItem;
+    N7: TMenuItem;
+    N8: TMenuItem;
+    N9: TMenuItem;
+    N10: TMenuItem;
+    N11: TMenuItem;
+    N12: TMenuItem;
+    N13: TMenuItem;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure N10Click(Sender: TObject);
+    procedure N11Click(Sender: TObject);
+    procedure N12Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure N6Click(Sender: TObject);
+    procedure N7Click(Sender: TObject);
+    procedure N13Click(Sender: TObject);
+    procedure N8Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses Unit2, Unit3, Unit4, Unit5, Unit6, Unit7, Unit8, Unit9, Unit10,
+  Unit11, Unit12;
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+form2.show;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+form3.show;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+form4.show;
+end;
+
+procedure TForm1.N10Click(Sender: TObject);
+begin
+form2.show;
+end;
+
+procedure TForm1.N11Click(Sender: TObject);
+begin
+form3.show;
+end;
+
+procedure TForm1.N12Click(Sender: TObject);
+begin
+ form4.show;
+end;
+
+procedure TForm1.N3Click(Sender: TObject);
+begin
+form5.show;
+end;
+
+procedure TForm1.N4Click(Sender: TObject);
+begin
+ form6.show;
+end;
+
+procedure TForm1.N1Click(Sender: TObject);
+begin
+  form7.show;
+end;
+
+procedure TForm1.N6Click(Sender: TObject);
+begin
+  form8.show;
+end;
+
+procedure TForm1.N7Click(Sender: TObject);
+begin
+   form9.show;
+end;
+
+procedure TForm1.N13Click(Sender: TObject);
+begin
+form10.show;
+end;
+
+procedure TForm1.N8Click(Sender: TObject);
+begin
+form11.show;
+end;
+
+procedure TForm1.N5Click(Sender: TObject);
+begin
+form12.show;
+end;
+
+end.

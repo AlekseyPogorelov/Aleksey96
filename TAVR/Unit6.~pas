@@ -1,0 +1,156 @@
+unit Unit6;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, jpeg;
+
+type
+  TForm6 = class(TForm)
+    Memo1: TMemo;
+    Image1: TImage;
+    Button1: TButton;
+    Button2: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Timer1: TTimer;
+    Timer2: TTimer;
+    Timer3: TTimer;
+    Timer4: TTimer;
+    Timer5: TTimer;
+    Label4: TLabel;
+    Timer6: TTimer;
+    Label5: TLabel;
+    Timer7: TTimer;
+    Timer8: TTimer;
+    Timer9: TTimer;
+    Timer10: TTimer;
+    Label6: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure Timer2Timer(Sender: TObject);
+    procedure Timer3Timer(Sender: TObject);
+    procedure Timer4Timer(Sender: TObject);
+    procedure Timer5Timer(Sender: TObject);
+    procedure Timer6Timer(Sender: TObject);
+    procedure Timer7Timer(Sender: TObject);
+    procedure Timer8Timer(Sender: TObject);
+    procedure Timer9Timer(Sender: TObject);
+    procedure Timer10Timer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+Memo1.Lines.LoadFromFile('and.txt') ;
+Image1.Picture.LoadFromFile('and.jpg');
+label1.Visible:=true;
+label2.Visible:=true;
+label3.Visible:=true;
+timer1.Enabled:=true;
+timer2.Enabled:=true;
+timer3.Enabled:=true;
+timer4.Enabled:=true;
+timer5.Enabled:=true;
+end;
+
+procedure TForm6.Button2Click(Sender: TObject);
+begin
+ Memo1.Lines.LoadFromFile('OR.txt') ;
+Image1.Picture.LoadFromFile('or.jpg');
+label4.Visible:=true;
+label5.Visible:=true;
+label6.Visible:=true;
+timer6.Enabled:=true;
+timer7.Enabled:=true;
+timer8.Enabled:=true;
+timer9.Enabled:=true;
+timer10.Enabled:=true;
+end;
+
+procedure TForm6.Timer1Timer(Sender: TObject);
+begin
+if label1.left>-1000
+  then
+    label1.Top:=label1.Top+5;
+if label1.top>640 then Timer1.Enabled:=false
+end;
+
+procedure TForm6.Timer2Timer(Sender: TObject);
+begin
+ if label2.left>-800
+  then
+    label2.Top:=label2.Top+5;
+if label2.top>620 then Timer2.Enabled:=false
+end;
+
+procedure TForm6.Timer3Timer(Sender: TObject);
+begin
+ label1.Visible := True;
+label1.Visible := False;
+end;
+
+procedure TForm6.Timer4Timer(Sender: TObject);
+begin
+ label2.Visible := True;
+label2.Visible := False;
+end;
+
+procedure TForm6.Timer5Timer(Sender: TObject);
+begin
+if label3.left>-2000
+  then
+    label3.Top:=label3.Top+5;
+if label3.top>720 then Timer5.Enabled:=false
+end;
+
+procedure TForm6.Timer6Timer(Sender: TObject);
+begin
+if label4.left>-1000
+  then
+    label4.Top:=label4.Top+5;
+if label4.top>640 then Timer6.Enabled:=false
+end;
+
+procedure TForm6.Timer7Timer(Sender: TObject);
+begin
+if label5.left>-800
+  then
+    label5.Top:=label5.Top+5;
+if label5.top>620 then Timer7.Enabled:=false
+end;
+
+procedure TForm6.Timer8Timer(Sender: TObject);
+begin
+ label4.Visible := True;
+label4.Visible := False;
+end;
+
+procedure TForm6.Timer9Timer(Sender: TObject);
+begin
+ label5.Visible := True;
+label5.Visible := False;
+end;
+
+procedure TForm6.Timer10Timer(Sender: TObject);
+begin
+if label6.left>-2000
+  then
+    label6.Top:=label6.Top+5;
+if label6.top>720 then Timer10.Enabled:=false
+end;
+
+end.
